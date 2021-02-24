@@ -1,0 +1,5 @@
+HOST-SUFFIX,clubhouseapi.com,PROXY
+HOST-SUFFIX,clubhouseprod.s3.amazonaws.com,PROXY
+HOST-SUFFIX,clubhouse.pubnub.com,PROXY
+HOST-SUFFIX,maintenance.joinclubhouse.com,PROXY
+HOST-SUFFIX,ap3.agora.io,PROXY
