@@ -25,6 +25,11 @@ HOST,apple-relay.apple.com,PROXY
 HOST,apple-relay.cloudflare.com,PROXY
 HOST,apple-relay.fastly-edge.com,PROXY
 HOST,cp4.cloudflare.com,PROXY
+# Apple Intelligence 的 ChatGPT 扩展（登录 ChatGPT 账号后设备直连 OpenAI）
+HOST-SUFFIX,chatgpt.com,PROXY
+HOST-SUFFIX,openai.com,PROXY
+HOST-SUFFIX,oaistatic.com,PROXY
+HOST-SUFFIX,oaiusercontent.com,PROXY
 HOST-SUFFIX,apple.co,Apple
 HOST-SUFFIX,apple.com,Apple
 HOST-SUFFIX,apple.com.cn,Apple
