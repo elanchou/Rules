@@ -15,6 +15,16 @@ USER-AGENT,geod*,Apple
 USER-AGENT,locationd*,Apple
 USER-AGENT,Maps*,Apple
 USER-AGENT,TestFlight*,Apple
+# Apple Intelligence、Siri 和搜索
+# 官方主机清单：https://support.apple.com/zh-cn/101555
+# 需置于下方 HOST-SUFFIX,apple.com,Apple 之前，确保优先命中代理策略
+HOST,guzzoni.apple.com,PROXY
+HOST-SUFFIX,smoot.apple.com,PROXY
+HOST-SUFFIX,smoot.apple.cn,PROXY
+HOST,apple-relay.apple.com,PROXY
+HOST,apple-relay.cloudflare.com,PROXY
+HOST,apple-relay.fastly-edge.com,PROXY
+HOST,cp4.cloudflare.com,PROXY
 HOST-SUFFIX,apple.co,Apple
 HOST-SUFFIX,apple.com,Apple
 HOST-SUFFIX,apple.com.cn,Apple
@@ -28,4 +38,3 @@ HOST-SUFFIX,icloud-content.com,Apple
 HOST-SUFFIX,itunes.com,Apple
 HOST-SUFFIX,me.com,Apple
 HOST-SUFFIX,mzstatic.com,Apple
-HOST,api.smoot.apple.cn,Apple
