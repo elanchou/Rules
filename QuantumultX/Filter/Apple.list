@@ -18,18 +18,18 @@ USER-AGENT,TestFlight*,Apple
 # Apple Intelligence、Siri 和搜索
 # 官方主机清单：https://support.apple.com/zh-cn/101555
 # 需置于下方 HOST-SUFFIX,apple.com,Apple 之前，确保优先命中代理策略
-HOST,guzzoni.apple.com,PROXY
-HOST-SUFFIX,smoot.apple.com,PROXY
-HOST-SUFFIX,smoot.apple.cn,PROXY
-HOST,apple-relay.apple.com,PROXY
-HOST,apple-relay.cloudflare.com,PROXY
-HOST,apple-relay.fastly-edge.com,PROXY
-HOST,cp4.cloudflare.com,PROXY
+HOST,guzzoni.apple.com,Outside
+HOST-SUFFIX,smoot.apple.com,Outside
+HOST-SUFFIX,smoot.apple.cn,Outside
+HOST,apple-relay.apple.com,Outside
+HOST,apple-relay.cloudflare.com,Outside
+HOST,apple-relay.fastly-edge.com,Outside
+HOST,cp4.cloudflare.com,Outside
 # Apple Intelligence 的 ChatGPT 扩展（登录 ChatGPT 账号后设备直连 OpenAI）
-HOST-SUFFIX,chatgpt.com,PROXY
-HOST-SUFFIX,openai.com,PROXY
-HOST-SUFFIX,oaistatic.com,PROXY
-HOST-SUFFIX,oaiusercontent.com,PROXY
+HOST-SUFFIX,chatgpt.com,Outside
+HOST-SUFFIX,openai.com,Outside
+HOST-SUFFIX,oaistatic.com,Outside
+HOST-SUFFIX,oaiusercontent.com,Outside
 HOST-SUFFIX,apple.co,Apple
 HOST-SUFFIX,apple.com,Apple
 HOST-SUFFIX,apple.com.cn,Apple

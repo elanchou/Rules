@@ -91,7 +91,6 @@ HOST-SUFFIX,uplynk.com,GMedia
 
 # > Fox+ (HK|TW|SG)
 USER-AGENT,FOXPlus*,GMedia
-HOST-SUFFIX,akamaized.net,GMedia
 HOST-SUFFIX,foxplus.com,GMedia
 HOST-SUFFIX,theplatform.com,GMedia
 
