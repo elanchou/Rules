@@ -781,8 +781,6 @@ IP-CIDR,203.174.77.0/24,Outside
 # > Potato Chat
 IP-CIDR,13.251.24.157/24,Outside
 IP-CIDR,13.251.41.203/24,Outside
-IP-CIDR,17.252.156.147/24,Outside
-IP-CIDR,17.252.157.26/24,Outside
 
 # > SoftLayer
 IP-CIDR,74.86.0.0/16,Outside
