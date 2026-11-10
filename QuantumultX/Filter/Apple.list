@@ -17,17 +17,24 @@ USER-AGENT,Maps*,Apple
 USER-AGENT,TestFlight*,Apple
 # Apple Intelligence、Siri 和搜索
 # 官方主机清单：https://support.apple.com/zh-cn/101555
-# 需置于下方 HOST-SUFFIX,apple.com,Apple 之前，确保优先命中代理策略
-HOST,guzzoni.apple.com,Outside
-HOST-SUFFIX,smoot.apple.com,Outside
-HOST-SUFFIX,smoot.apple.cn,Outside
-HOST,apple-relay.apple.com,Outside
-HOST,apple-relay.cloudflare.com,Outside
-HOST,apple-relay.fastly-edge.com,Outside
-HOST,cp4.cloudflare.com,Outside
-# Apple Intelligence 的 ChatGPT 扩展（登录 ChatGPT 账号后设备直连 OpenAI）
-HOST-SUFFIX,chatgpt.com,Outside
+# 需置于下方 HOST-SUFFIX,apple.com,Apple 之前，确保优先命中
+# 1. Siri 核心语音交互必须直连 + 真实 IP（防普通话 Siri 报错「我碰到了一点问题」）
+HOST-SUFFIX,guzzoni.apple.com,direct
+HOST-SUFFIX,siri.apple.com,direct
+HOST,dejavu.apple.com,direct
+HOST,sequoia.apple.com,direct
+HOST-SUFFIX,smoot.apple.com,direct
+HOST-SUFFIX,smoot.apple.cn,direct
+# 2. Apple 智能资格校验与私密云计算（PCC）中继，建议走低延迟美国节点
+HOST,gspe1-ssl.ls.apple.com,Outside
+HOST-SUFFIX,apple-relay.apple.com,Outside
+HOST-SUFFIX,apple-relay.cloudflare.com,Outside
+HOST-SUFFIX,apple-relay.fastly-edge.com,Outside
+HOST-SUFFIX,apple-relay.akamaized.net,Outside
+HOST-SUFFIX,cp4.cloudflare.com,Outside
+# 3. Apple Intelligence 的 ChatGPT 扩展（走美国节点）
 HOST-SUFFIX,openai.com,Outside
+HOST-SUFFIX,chatgpt.com,Outside
 HOST-SUFFIX,oaistatic.com,Outside
 HOST-SUFFIX,oaiusercontent.com,Outside
 HOST-SUFFIX,apple.co,Apple
